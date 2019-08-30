@@ -1,18 +1,12 @@
 <?php
 
 
-    // Statistique du nombre de gagnant par catégorie
+unset($choice[array_search($complementaire, $choice)]);
 
-    $n6 = 0;
-    $n5plus = 0;
-    $n5 = 0;
-    $n4plus = 0;
-    $n4 = 0;
-    $n3plus = 0;
-    $n3 = 0;
-    $n2plus = 0;
-    $n1plus = 0;
+echo 'la combinaison gagnante est : '; 
+foreach($choice as $num){ echo $number[$num] . ' - ';}
+foreach($complementaire as $comp => $num){
+echo '[' . $number[$num] . '] <br>';
+}
 
-    for($n=1; $n<=1000000; $n++){
-
-    }
+echo "hello";
